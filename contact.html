@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Factory</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/97794506da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+  <!--FOOTER -->
+
+  <header>
+    <div class="nav-bar">
+      <div class="logo-header">
+        <img src="Images/PNG.png" alt="logo" />
+      </div>
+
+      <ul class="menu">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="appetizers.html">Appetizers</a>
+        </li>
+        <li>
+          <a href="soups.html">Soups</a>
+        </li>
+        <li>
+          <a href="maindish.html">Main Dish</a>
+        </li>
+        <li>
+          <a href="salads.html">Salads</a>
+        </li>
+        <li>
+          <a href="desserts.html">Desserts</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="search">
+        <input class="search-bar" type="search" name="search" placeholder="Search"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+
+    </div>
+  </header>
+
+    <!-- CONTENT -->
+
+    <div class="container">
+      <form class="form" id="formID">
+        <div class="form-contact1">
+          <p class="p1">Connect with us</p>
+          <div class="media1">
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            
+              <a href="https://www.pinterest.com/">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+                        
+              <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+          </div>
+          <div class="media2">
+            <p class="p2"><i class="fa-solid fa-envelope"></i> yummyfactory@gmail.com</p>
+            <p class="p2"><i class="fa-solid fa-phone"></i> 0789756155</p>
+          </div>
+        </div>
+        <div class="form-contact2">
+          <h3>Contact Us</h3>
+          <input class="name" id="name" type="text" placeholder="Your Name" required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
+          <input class="email" id="email" type="email" placeholder="Email Address" required pattern="^[\w.%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+          <input class="phone" id="phone" type="phone" placeholder="Phone Number" required pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"> 
+          <textarea class="msg" id="msg" rows="4" placeholder="How can we help you?"></textarea>
+          <button type="submit" class="submit-btn">Send</button>
+        </div>
+        <div class="popup" id="popup">
+          <img src="Images/check mark.png">
+          <h2>Thank You!</h2>
+          <p> Successfully Submitted</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="logo-footer">
+        <img src="Images/PNG.png" alt="logo" />
+      </div>
+
+      <div class="footer-elements">
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="contact">
+          <p class="p2"><i class="fa-solid fa-envelope"></i> yummyfactory@gmail.com</p>
+          <p class="p2"><i class="fa-solid fa-phone"></i> 0789756155</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

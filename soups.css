@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, hsla(39, 70%, 50%, 0.85), hsla(60, 25%, 71%, 0.85)), url('background/background3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*! HEADER */
+
+header {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5rem 3rem;
+  gap: .2em;
+}
+
+.search :hover{
+  background-color: rgba(199, 193, 193, 0.495);
+  color: white;
+  transition: 0.5s;
+}
+
+.search button {
+  background-color: goldenrod;
+  transition: 0.5s;
+  border-radius: 0.3em;
+  height: 20px;
+  width: 20px;
+}
+
+.search .search-bar {
+  background-color: rgba(211, 158, 25, 0.367);
+  transition: 0.5s;
+  border-radius: 0.3em;
+  height: 20px;
+  width: 100px;
+}
+
+.search button:hover {
+  background-color: rgba(199, 193, 193, 0.495);
+}
+
+
+.logo-header img {
+  width: 35%;
+  height: fit-content;
+  padding-left: 0.5rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 100%;
+  margin-bottom: 0;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.nav-bar ul {
+  list-style: none;
+  gap: 0.4em;
+}
+
+.nav-bar ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0.5em 0 0.5em 0;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.menu {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 1100px;
+}
+
+.menu a {
+  color: goldenrod;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  padding: 0.5rem 0.5rem;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgb(255, 255, 255);
+  padding-left: 1.5rem;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .nav-bar .logo-header img {
+    width: 25%;
+  }
+  .nav-bar ul li a {
+    font-size: 0.5rem;
+  }
+  .nav-bar.search {
+    width: 100px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .nav-bar .logo-header img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .nav-bar .logo-header img {
+    width: 25%;
+  }
+  .menu {
+    position: fixed;
+    /* white-space: wrap; */
+    width: 100%;
+    height: fit-content;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    background-color: black;
+    color: goldenrod;
+  }
+  .nav-bar .menu li {
+    display: block;
+  }
+  .nav-bar .menu li a {
+    font-size: auto;
+    text-align: center;
+  }
+  .nav-bar .search .search-bar{
+    width: 100px;
+  }
+}
+/* PAGE CONTENT */
+
+.soups {
+  padding: 50px;
+  width: 100vw;
+  height: 80vh;
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.soups-content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 5px;
+  background-color: goldenrod;
+}
+
+.soups-content a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bolder; 
+}
+
+.soups-content p {
+  color: black;
+  font-size: 0.8em;
+}
+
+.soups-btn {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:goldenrod;
+  background-color: rgba(242, 218, 158, 0.981);
+}
+
+#btn {
+  color: rgba(0, 0, 0, 0.981);
+  width: 20%;
+  padding: 3px;
+  border-color: goldenrod;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+#btn:hover {
+  transform: scale(1.1);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  background: rgba(242, 218, 158, 0.981);
+  
+}
+
+.recipe h2 {
+  background-color: white;
+  color: black;
+}
+
+.like,.dislike {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  place-items : center;
+}
+
+.icon {
+  font-size: 12px;
+  color: goldenrod;
+  cursor: pointer;
+  transition: .5s;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.icon:hover{
+  color: darkred;
+  transform: scale(1.2);
+}
+ 
+.hearts {
+  padding: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background: none;
+  font-size: 12px;
+  font-weight: 100;
+  pointer-events: none;
+  color: #000000;
+  text-shadow: 5px 8px 15px rgb(179, 135, 26);
+}
+
+
+/* todo: POPUP IMAGES */
+
+.image:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+/*! FOOTER */
+
+footer {
+  background-color: #000000;
+  width: 100vw;
+  margin-bottom: 0;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+footer div ul{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  padding: 1.5em;
+}
+
+.logo-footer img {
+  width: 25%;
+  height: fit-content;
+  align-items: flex-start;
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media li {
+  color: goldenrod;
+  padding: 0.3rem;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+}
+
+.social-media a {
+  color: goldenrod;
+  font-size: 20px;
+  align-items: center;
+}
+
+.social-media a:hover {
+  color: goldenrod;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.contact {
+  color: goldenrod;
+  font-size: 0.5rem;
+  padding: 1.5rem 1.5rem 1rem 15rem;
+  width: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    width: 100%;
+    bottom: 0;
+  }
+  .logo-footer img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+  }
+  .logo-footer img {
+    width: 25%;
+  }
+  .footer-elements {
+    height: 80px; 
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+  }
+  .logo-footer img {
+    width: 25%;
+  }
+  .footer-elements .social-media .contact {
+    height: 80px; 
+  }
+
+  .social-media i{
+    height: fit-content;
+    font-size: 10px;
+  }
+
+}
+
+
+
+  

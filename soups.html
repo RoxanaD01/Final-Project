@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Factory</title>
+    <link rel="stylesheet" href="soups.css" />
+    <script src="https://kit.fontawesome.com/97794506da.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+
+    <!-- HEADER -->
+
+    <header>
+      <div class="nav-bar">
+        <div class="logo-header">
+          <img src="Images/PNG.png" alt="logo" />
+        </div>
+
+        <ul class="menu">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="appetizers.html">Appetizers</a>
+          </li>
+          <li>
+            <a href="soups.html">Soups</a>
+          </li>
+          <li>
+            <a href="maindish.html">Main Dish</a>
+          </li>
+          <li>
+            <a href="salads.html">Salads</a>
+          </li>
+          <li>
+            <a href="desserts.html">Desserts</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <form class="search">
+          <input class="search-bar" type="search" name="search" placeholder="Search"/>
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+
+  <!-- CONTENT -->
+  <div class="soups">
+    <div class="soup">
+      <img src="Images/upgrade-chicken-noodle-soup.jpg" onclick="window.location.href='Recipes/soup1.html'" alt="" class="image" />
+      <div class="soups-content">
+        <a href="">Chicken Noodle Soup</a>
+      </div>
+      <div class="wrapper">
+        <div class="like">
+          <i onclick="count()" class="fas fa-heart icon"></i>
+          <input class="hearts" id="likeCount" type="number" value="0">
+        </div>
+        <div class="dislike">
+          <i onclick="count1()" class="fas fa-heart-broken icon"></i>
+          <input class="hearts" id="dislikeCount" type="number" value="0">
+        </div>
+      </div>
+      <div class="soups-btn">
+        <button type="submit" id="btn" class="open-recipe" onclick="window.location.href='Recipes/soup1.html'">Recipe</button>
+      </div>
+    </div>
+
+    <div class="soup">
+      <img src="Images/italian-seafood-soup-.jpeg" onclick="window.location.href='Recipes/soup2.html'" alt="" class="image" />
+      <div class="soups-content">
+        <a href="">Seafood Soup</a>
+      </div>
+      <div class="wrapper">
+        <div class="like">
+          <i onclick="count2()" class="fas fa-heart icon"></i>
+          <input class="hearts" id="likeCount2" type="number" value="0">
+        </div>
+        <div class="dislike">
+          <i onclick="count3()" class="fas fa-heart-broken icon"></i>
+          <input class="hearts" id="dislikeCount3" type="number" value="0">
+        </div>
+      </div>
+      <div class="soups-btn">
+        <button type="submit" id="btn" class="open-recipe" onclick="window.location.href='Recipes/soup2.html'">Recipe</button>
+      </div>
+    </div>
+
+    <div class="soup">
+      <img src="Images/Creamy-Roasted-Tomato.webp" onclick="window.location.href='Recipes/soup3.html'" alt="" class="image" />
+      <div class="soups-content">
+        <a href="">Roasted Tomato Soup</a>
+      </div>
+      <div class="wrapper">
+        <div class="like">
+          <i onclick="count4()" class="fas fa-heart icon"></i>
+          <input class="hearts" id="likeCount4" type="number" value="0">
+        </div>
+        <div class="dislike">
+          <i onclick="count5()" class="fas fa-heart-broken icon"></i>
+          <input class="hearts" id="dislikeCount5" type="number" value="0">
+        </div>
+      </div>
+      <div class="soups-btn">
+        <button type="submit" id="btn" class="open-recipe" onclick="window.location.href='Recipes/soup3.html'">Recipe</button>
+      </div>
+    </div>
+  </div>
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="logo-footer">
+        <img src="Images/PNG.png" alt="logo" />
+      </div>
+
+      <div class="footer-elements">
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="contact">
+          <p>Email: yummyfactory@gmail.com</p>
+          <p>Telephone: 0789756155</p>
+        </div>
+      </div>
+    </footer>
+
+      <script src="soups.js"></script>
+  </body>
+</html>
