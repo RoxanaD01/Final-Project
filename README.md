@@ -47,16 +47,16 @@ yummy-factory/
 📸 Screenshots
 
 ### Homepage
-![Homepage](Images/homepage.png)
+![Homepage](Images/homepage.PNG)
 
 ### Like/Dislike
-![Like/Dislike](Images/like-dislike.png)
+![Like/Dislike](Images/like-dislike.PNG)
 
 ### Recipes Page
-![Recipes](Images/recipe.png)
+![Recipes](Images/recipe.PNG)
 
 ### Contact Form
-![Contact Form](Images/form.png)
+![Contact Form](Images/form.PNG)
 
 ##  Lessons Learned
 
