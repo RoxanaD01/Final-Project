@@ -7,9 +7,8 @@
   scroll-behavior: smooth;
 }
 
+
 body {
-  width: 100vw;
-  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
