@@ -30,6 +30,7 @@ The website features over **15 carefully selected recipes** organized into:
 
 ## Project Structure
 
+```
 yummy-factory/
 ├── index.html              # Homepage
 ├── appetizers.html         # Appetizer recipes
@@ -42,20 +43,20 @@ yummy-factory/
 ├── css/                    # Stylesheets
 ├── js/                     # JavaScript functionality
 └── images/                 # Recipe photos & assets
-
+```
 📸 Screenshots
 
 ### Homepage
-![Homepage](images/homepage.png)
+![Homepage](Images/homepage.png)
 
 ### Like/Dislike
-![Like/Dislike](images/like0dislike.png)
+![Like/Dislike](Images/like-dislike.png)
 
 ### Recipes Page
-![Recipes](images/recipe.png)
+![Recipes](Images/recipe.png)
 
 ### Contact Form
-![Contact Form](images/form.png)
+![Contact Form](Images/form.png)
 
 ##  Lessons Learned
 
